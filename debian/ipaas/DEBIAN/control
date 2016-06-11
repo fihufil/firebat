@@ -1,0 +1,10 @@
+Package: ipaas
+Version: 1.2-3
+Architecture: amd64
+Maintainer: Filip D <fihufil@rapidrage.eu.org>
+Installed-Size: 54
+Section: misc
+Priority: extra
+Homepage: http://www.rapidrage.org/
+Description: Helper sript for iptables firewall.
+ Write your rules to /etc/ipaas and run service ipaas restart.

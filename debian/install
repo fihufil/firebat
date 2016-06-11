@@ -1,0 +1,4 @@
+src/ipaas /etc/
+src/ipaas.conf /etc/init/
+src/ipaas-init /lib/ipaas/
+man/ipaas.8 /usr/share/man/man8/
