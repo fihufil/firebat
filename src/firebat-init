@@ -16,8 +16,8 @@
 IPTBLS=/sbin/iptables
 
 start_firewall(){
-if [ -s "/etc/ipaas" ]; then
-    . "/etc/ipaas"
+if [ -s "/etc/firebat" ]; then
+    . "/etc/firebat"
 else
 	echo "Could not find rules file!"
 	exit 1
@@ -54,7 +54,7 @@ restart)
 
     ;;
 *)
-    echo "Usage: /lib/ufw/ufw-init {start|stop|restart}"
+    echo "Usage: /lib/firebat/firebat-init {start|stop|restart}"
     exit 1
     ;;
 esac

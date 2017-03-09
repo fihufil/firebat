@@ -1,4 +1,4 @@
-Source: ipaas
+Source: firebat
 Section: misc
 Priority: extra
 Maintainer: Filip D <fihufil@rapidrage.eu.org>
@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 8.0.0), autotools-dev
 Standards-Version: 3.9.3
 Homepage: http://www.rapidrage.org/
 
-Package: ipaas
+Package: firebat
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Helper sript for iptables firewall.
- Write your rules to /etc/ipaas and run service ipaas restart.
+ Write your rules to /etc/firebat and run service firebat restart.

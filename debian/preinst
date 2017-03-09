@@ -1,5 +1,5 @@
 #!/bin/sh
-# preinst script for ipaas
+# preinst script for firebat
 #
 # see: dh_installdeb(1)
 
@@ -16,8 +16,8 @@ set -e
 
 case "$1" in
     install|upgrade)
-	if [ -s "/etc/ipaas" ]; then
-    		cp /etc/ipaas /etc/ipaas.save
+	if [ -s "/etc/firebat" ]; then
+    		cp /etc/firebat /etc/firebat.save
 	exit 1
 	fi
     ;;

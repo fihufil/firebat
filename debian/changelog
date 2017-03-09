@@ -1,20 +1,20 @@
-ipaas (1.2-3) precise; urgency=low
+firebat (1.2-3) precise; urgency=low
 
   * New package type
 
  -- Filip D <fihufil@rapidrage.eu.org>  Mon, 27 May 2013 18:18:53 +0200
-ipaas (1.2-2) precise; urgency=low
+firebat (1.2-2) precise; urgency=low
 
   * New package type
 
  -- Filip D <fihufil@rapidrage.eu.org>  Sat, 25 May 2013 22:20:53 +0200
-ipaas (1.1-2) precise; urgency=low
+firebat (1.1-2) precise; urgency=low
 
   * Fixed permission issues
 
  -- Filip D <fihufil@rapidrage.eu.org>  Sat, 25 May 2013 22:20:53 +0200
 
-ipaas (1.0-5) precise; urgency=low
+firebat (1.0-5) precise; urgency=low
 
   * Add starting at system boot and stopping at system halt
 

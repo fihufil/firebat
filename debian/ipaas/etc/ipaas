@@ -1,8 +1,0 @@
-#!/bin/bash
-#
-# IPAAS rules script
-# Define each rule as example below shows
-# 
-
-# Uncomment this to allow all incoming SSH connections
-# $IPTBLS -A INPUT -p tcp --dport 22 -j ACCEPT
