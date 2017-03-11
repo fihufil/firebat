@@ -1,13 +1,15 @@
 Source: firebat
-Section: misc
-Priority: extra
-Maintainer: Filip D <fihufil@rapidrage.eu.org>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev
-Standards-Version: 3.9.3
-Homepage: http://www.rapidrage.org/
+Section: admin
+Priority: optional
+Maintainer: Filip Dorosz <filip.dorosz@rapidrage.org>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: https://rapidrage.github.io/firebat
+#Vcs-Git: git://anonscm.debian.org/collab-maint/firebat.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/firebat.git
 
 Package: firebat
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Helper sript for iptables firewall.
- Write your rules to /etc/firebat and run service firebat restart.
+ Write your rules to /etc/firebat/*.rules and run systemctl restart firebat.

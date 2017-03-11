@@ -16,24 +16,20 @@
 IPTBLS=/sbin/iptables
 
 start_firewall(){
-if [ -s "/etc/firebat" ]; then
-    . "/etc/firebat"
+if [ -s "/etc/firebat/up.rules" ]; then
+	. "/etc/firebat/up.rules"
 else
-	echo "Could not find rules file!"
+	echo "Could not find: up.rules"
 	exit 1
 fi
 }
 
 stop_firewall(){
-$IPTBLS -F
-$IPTBLS -X
-$IPTBLS -t nat -F
-$IPTBLS -t nat -X
-$IPTBLS -t mangle -F
-$IPTBLS -t mangle -X
-$IPTBLS -P INPUT ACCEPT
-$IPTBLS -P FORWARD ACCEPT
-$IPTBLS -P OUTPUT ACCEPT
+if [ -s "/etc/firebat/up.rules" ]; then
+	. "/etc/firebat/down.rules"
+else
+	echo "Could not find: down.rules"
+fi
 }
 
 case "$1" in

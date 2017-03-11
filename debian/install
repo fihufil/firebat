@@ -1,4 +1,3 @@
-src/firebat /etc/
-src/firebat.conf /etc/init/
+conf/* /etc/firebat/
+src/firebat.service /lib/systemd/system/
 src/firebat-init /lib/firebat/
-man/firebat.8 /usr/share/man/man8/

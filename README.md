@@ -1,15 +1,9 @@
-# firebat - program for starting iptables firewall on startup
+# firebat - very simple firewall
 
 ## Description
-This program starts iptables rules stored in /etc/ipaas at system boot.
+This scripts loads iptables rules stored in /etc/firebat/* at system boot.
 
 ## Usage
-`service ipaas {start|stop|restart}`
-`start ipaas`
-`stop ipaas`
-
-## Building
-`dpkg-buildpackage`
-
-## Installation
-`dpkg -i ipaas*`
+`systemctl start firebat.service`
+`systemctl stop firebat.service`
+`systemctl restart firebat.service`

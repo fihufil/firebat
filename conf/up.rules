@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+# Firebat rules script
+# Define each rule as example below shows
+#
+#$IPTBLS -A INPUT ...

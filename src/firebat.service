@@ -1,0 +1,14 @@
+[Unit]
+Description=Very simple firewall
+Before=network-pre.target
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/lib/firebat/firebat-init start
+ExecStop=/lib/firebat/firebat-init stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+

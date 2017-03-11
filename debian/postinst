@@ -22,6 +22,7 @@ case "$1" in
     configure)
 	chmod +x /lib/firebat/firebat-init
 	chmod 600 /etc/firebat
+	systemctl enable firebat.service
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

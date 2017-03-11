@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Firebat rules script
+# Define each rule as example below shows
+#
+#$IPTBLS -F
+#$IPTBLS -X
+#$IPTBLS -t nat -F
+#$IPTBLS -t nat -X
+#$IPTBLS -t mangle -F
+#$IPTBLS -t mangle -X
+#$IPTBLS -P INPUT ACCEPT
+#$IPTBLS -P FORWARD ACCEPT
+#$IPTBLS -P OUTPUT ACCEPT
